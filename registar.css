@@ -1,0 +1,90 @@
+/* Fondo general */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('c:/Users/Lucas/Downloads/dff9fcc4-4917-40e1-bafd-504791de303c.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000; /* Color de respaldo */
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+#register-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo negro con opacidad */
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+}
+
+/* Título del formulario */
+#register-container h2 {
+    margin-bottom: 20px;
+    color: #ff0000; /* Rojo */
+    font-size: 24px;
+}
+
+/* Estilo de los grupos de entrada */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Etiquetas */
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ff0000; /* Rojo */
+    font-weight: bold;
+}
+
+/* Entradas de texto y select */
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ff0000; /* Borde rojo */
+    border-radius: 5px;
+    background-color: #111; /* Fondo oscuro */
+    color: #fff;
+    box-sizing: border-box;
+}
+
+/* Botón de registro */
+.save-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0000; /* Fondo rojo */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover del botón */
+.save-btn:hover {
+    background-color: #cc0000; /* Rojo más oscuro */
+}
+
+/* Responsividad para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    #register-container {
+        padding: 15px;
+    }
+
+    .save-btn {
+        font-size: 14px;
+    }
+}
